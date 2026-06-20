@@ -1,0 +1,21 @@
+/* rtl.css - LegalSeal Overrides for RTL */
+
+html[dir="rtl"] {
+  /* No need to reverse flex-direction or margins if using logical properties in main css 
+     But just in case any explicit left/right margins are used, override them here */
+}
+
+html[dir="rtl"] .drawer {
+  /* Already handled in style.css for drawer positioning */
+}
+
+/* Icons like arrows should be flipped */
+html[dir="rtl"] .lucide-arrow-right {
+  transform: rotate(180deg);
+}
+
+/* Typewriter animation direction */
+html[dir="rtl"] .typewriter-text {
+  border-right: none;
+  border-left: 0.15em solid var(--color-primary);
+}

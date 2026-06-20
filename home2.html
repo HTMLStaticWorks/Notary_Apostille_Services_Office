@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LegalSeal | Premium Notary Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- Navbar (Same as Index) -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i data-lucide="scale"></i> LegalSeal
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="apostille.html" class="nav-link">Apostille</a>
+        <a href="documents.html" class="nav-link">Documents</a>
+        <a href="fees.html" class="nav-link">Fees</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="theme-icon"></i>
+        </button>
+        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+        <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem;">Login</a>
+      </div>
+
+      <button class="icon-btn hamburger" aria-label="Open Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo">
+        <i data-lucide="scale"></i> LegalSeal
+      </a>
+      <button class="icon-btn drawer-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <div class="drawer-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="apostille.html" class="nav-link">Apostille</a>
+      <a href="documents.html" class="nav-link">Documents</a>
+      <a href="fees.html" class="nav-link">Fees</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <div class="drawer-actions">
+      <div class="flex items-center gap-4 justify-between" style="margin-bottom: 1rem;">
+        <span style="font-weight: 500;">Appearance</span>
+        <div class="flex gap-2">
+          <button class="icon-btn theme-toggle" aria-label="Toggle Theme">
+            <i data-lucide="sun" class="theme-icon"></i>
+          </button>
+          <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+        </div>
+      </div>
+      <a href="login.html" class="btn btn-primary btn-full">Login</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Split Screen Hero with Slide Up Animation -->
+    <section class="hero-split">
+      <div class="hero-split-grid">
+        <div class="hero-split-text">
+          <span class="section-subtitle animate-slide-up stagger-1">LegalSeal Services</span>
+          <h1 class="animate-slide-up stagger-2" style="margin-bottom: 1.5rem;">
+            Global Document Legalization
+          </h1>
+          <p class="animate-slide-up stagger-3"
+            style="font-size: 1.125rem; color: var(--color-text-muted); margin-bottom: 2.5rem; max-width: 500px;">
+            Expert notary and apostille processing services, ensuring your documents are recognized worldwide with zero
+            friction.
+          </p>
+          <div class="flex gap-4 animate-slide-up stagger-4">
+            <a href="contact.html" class="btn btn-primary">Book Now</a>
+            <a href="fees.html" class="btn btn-outline">View Pricing</a>
+          </div>
+        </div>
+
+        <div class="hero-image-container">
+          <div class="card hero-card"
+            style="padding: 0; overflow: hidden; border-radius: var(--radius-global); box-shadow: var(--shadow-global); border: 1px solid var(--color-border);">
+            <img src="assets/images/home2-hero.jpg" alt="Global Document Legalization"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Why Choose Us Banner -->
+    <section class="section" style="background-color: var(--color-primary); color: #fff;">
+      <div class="container text-center">
+        <h2 style="color: #fff; margin-bottom: 4rem;">The LegalSeal Advantage</h2>
+        <div class="grid stats-grid">
+          <div>
+            <h3 class="stat-number" data-target="25" data-suffix="+"
+              style="font-size: 3rem; color: var(--color-accent); margin-bottom: 0.5rem;">0+</h3>
+            <p style="font-weight: 500; font-size: 1.125rem;">Years Experience</p>
+          </div>
+          <div>
+            <h3 class="stat-number" data-target="100" data-suffix="%"
+              style="font-size: 3rem; color: var(--color-accent); margin-bottom: 0.5rem;">0%</h3>
+            <p style="font-weight: 500; font-size: 1.125rem;">Acceptance Rate</p>
+          </div>
+          <div>
+            <h3 class="stat-number" data-target="24" data-suffix="/7"
+              style="font-size: 3rem; color: var(--color-accent); margin-bottom: 0.5rem;">0/7</h3>
+            <p style="font-weight: 500; font-size: 1.125rem;">Mobile Support</p>
+          </div>
+          <div>
+            <h3 class="stat-number" data-target="120" data-suffix="+"
+              style="font-size: 3rem; color: var(--color-accent); margin-bottom: 0.5rem;">0+</h3>
+            <p style="font-weight: 500; font-size: 1.125rem;">Countries Served</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Who We Serve -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 4rem;">
+          <span class="section-subtitle">Who We Serve</span>
+          <h2 style="margin-bottom: 1rem;">Built for Every Client</h2>
+          <p style="color: var(--color-text-muted); max-width: 580px; margin-inline: auto;">
+            Whether you're an individual, a legal professional, or a multinational corporation — LegalSeal delivers the
+            same standard of precision.
+          </p>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+
+          <div
+            style="border: 1px solid var(--color-border); border-radius: var(--radius-global); overflow: hidden; background-color: var(--color-secondary);">
+            <div style="height: 280px; overflow: hidden;">
+              <img src="assets/images/client-individual.jpg" alt="Individual clients"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-base);"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="padding: 2rem; text-align: center;">
+              <span
+                style="font-size: 0.75rem; text-transform: uppercase; font-weight: bold; color: var(--color-primary); letter-spacing: 0.08em; display: block;">Individuals</span>
+              <h3 style="font-size: 1.25rem; margin-block: 0.75rem;">Personal Document Services</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9375rem;">Birth certificates, powers of attorney,
+                passport copies, and more — handled with complete discretion.</p>
+            </div>
+          </div>
+
+          <div
+            style="border: 1px solid var(--color-border); border-radius: var(--radius-global); overflow: hidden; background-color: var(--color-secondary);">
+            <div style="height: 280px; overflow: hidden;">
+              <img src="assets/images/client-lawfirm.jpg" alt="Law firm clients"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-base);"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="padding: 2rem; text-align: center;">
+              <span
+                style="font-size: 0.75rem; text-transform: uppercase; font-weight: bold; color: var(--color-primary); letter-spacing: 0.08em; display: block;">Law
+                Firms</span>
+              <h3 style="font-size: 1.25rem; margin-block: 0.75rem;">Legal Professional Support</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9375rem;">Reliable same-day notarization for
+                attorneys managing time-sensitive filings and court submissions.</p>
+            </div>
+          </div>
+
+          <div
+            style="border: 1px solid var(--color-border); border-radius: var(--radius-global); overflow: hidden; background-color: var(--color-secondary);">
+            <div style="height: 280px; overflow: hidden;">
+              <img src="assets/images/client-corporate.jpg" alt="Corporate clients"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-base);"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="padding: 2rem; text-align: center;">
+              <span
+                style="font-size: 0.75rem; text-transform: uppercase; font-weight: bold; color: var(--color-primary); letter-spacing: 0.08em; display: block;">Corporations</span>
+              <h3 style="font-size: 1.25rem; margin-block: 0.75rem;">Global Business Legalization</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9375rem;">Bulk apostille processing, corporate
+                document authentication, and international compliance at scale.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Office & Process -->
+    <section class="section" style="background-color: var(--color-surface-alt);">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 4rem;">
+          <span class="section-subtitle">Behind the Seal</span>
+          <h2 style="margin-bottom: 1rem;">Our Office & Process</h2>
+          <p style="color: var(--color-text-muted); max-width: 580px; margin-inline: auto;">
+            Every document that passes through LegalSeal is handled in a secure, professional environment by certified
+            experts.
+          </p>
+        </div>
+
+        <!-- Row 1: image left, text right -->
+        <div class="grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center; margin-bottom: 5rem;">
+          <div class="process-img-wrap" style="border-radius: var(--radius-global); overflow: hidden; box-shadow: var(--shadow-global);">
+            <img src="assets/images/process-office.jpg" alt="LegalSeal office environment"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <div style="text-align: center;">
+            <span
+              style="font-size: 0.75rem; text-transform: uppercase; font-weight: bold; color: var(--color-accent); letter-spacing: 0.08em; display: block; margin-bottom: 1rem;">Our
+              Space</span>
+            <h3 style="margin-bottom: 1rem;">A Professional Environment Built for Confidentiality</h3>
+            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">
+              Our office is designed to put clients at ease while maintaining the rigorous security standards required
+              for sensitive legal materials. Every consultation is private, every document is protected.
+            </p>
+            <p style="color: var(--color-text-muted);">
+              We maintain a fully secured document handling protocol from intake through to final certification —
+              nothing leaves our office without verification.
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 2: text left, image right -->
+        <div class="grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
+          <div style="text-align: center;">
+            <span
+              style="font-size: 0.75rem; text-transform: uppercase; font-weight: bold; color: var(--color-accent); letter-spacing: 0.08em; display: block; margin-bottom: 1rem;">Our
+              Standards</span>
+            <h3 style="margin-bottom: 1rem;">Meticulous Review on Every Single Document</h3>
+            <p style="color: var(--color-text-muted); margin-bottom: 1rem;">
+              Before any stamp is applied, our certified notaries conduct a thorough identity verification and document
+              review. We catch errors before they become costly rejections.
+            </p>
+            <p style="color: var(--color-text-muted);">
+              Our 100% acceptance rate is not an accident — it is the result of a disciplined, repeatable process honed
+              over 25 years.
+            </p>
+          </div>
+          <div class="process-img-wrap" style="border-radius: var(--radius-global); overflow: hidden; box-shadow: var(--shadow-global);">
+            <img src="assets/images/process-documents.jpg" alt="Document processing at LegalSeal"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Featured Testimonial (Different from index grid) -->
+    <section class="section">
+      <div class="container">
+        <div class="featured-testimonial"
+          style="background-color: var(--color-surface-alt); padding: 4rem; border-radius: var(--radius-global); text-align: center; position: relative;">
+          <i data-lucide="quote"
+            style="width: 4rem; height: 4rem; color: var(--color-border); position: absolute; top: 2rem; left: 2rem;"></i>
+          <div style="color: var(--color-accent); margin-bottom: 1.5rem; justify-content: center; display: flex;">
+            <i data-lucide="star" style="fill: var(--color-accent);"></i><i data-lucide="star"
+              style="fill: var(--color-accent);"></i><i data-lucide="star" style="fill: var(--color-accent);"></i><i
+              data-lucide="star" style="fill: var(--color-accent);"></i><i data-lucide="star"
+              style="fill: var(--color-accent);"></i>
+          </div>
+          <p
+            style="font-size: 1.5rem; font-family: var(--font-heading); font-style: italic; max-width: 800px; margin: 0 auto 2rem; line-height: 1.4;">
+            "We have relied on LegalSeal for all our corporate apostilles for over a decade. Their meticulous attention
+            to detail and ability to handle rush requests is unparalleled in the industry."
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&q=80"
+              alt="Client" style="width: 3.5rem; height: 3.5rem; border-radius: 50%; object-fit: cover;">
+            <div style="text-align: left;">
+              <h4 style="margin-bottom: 0;">Jonathan Reynolds</h4>
+              <span style="font-size: 0.875rem; color: var(--color-text-muted);">Managing Partner, Reynolds Law
+                Group</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple Boxed CTA -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div
+          style="border: 2px solid var(--color-primary); padding: 4rem 2rem; border-radius: var(--radius-global); text-align: center;">
+          <h2 style="margin-bottom: 1rem;">Ready for secure certification?</h2>
+          <p style="color: var(--color-text-muted); margin-bottom: 2rem; max-width: 500px; margin-inline: auto;">
+            Schedule your appointment or request our mobile notary services today.</p>
+          <div class="flex justify-center gap-4">
+            <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+            <i data-lucide="scale"></i> LegalSeal
+          </a>
+          <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; max-width: 300px;">
+            Your trusted partner for certified notarization and apostille services. Precision, legality, and peace of
+            mind.
+          </p>
+          <div class="flex gap-4">
+            <span class="badge-item"><i data-lucide="shield-check"
+                style="width: 1rem; height: 1rem; color: var(--color-accent);"></i> Licensed & Bonded</span>
+            <span class="badge-item"><i data-lucide="award"
+                style="width: 1rem; height: 1rem; color: var(--color-accent);"></i> NNA Certified</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="apostille.html">Apostille</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact Us</h4>
+          <ul class="footer-links">
+            <li><i data-lucide="phone"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              +1 (800) 555-0199</li>
+            <li><i data-lucide="mail"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              support@legalseal.com</li>
+            <li><i data-lucide="map-pin"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              100 Legal Avenue, Metropolis, NY</li>
+            <li><i data-lucide="clock"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              Mon–Sat: 9am – 7pm</li>
+          </ul>
+
+          <form style="margin-top: 1.5rem;" class="needs-validation">
+            <h5 style="margin-bottom: 0.75rem; font-size: 1rem;">Newsletter</h5>
+            <div class="flex gap-2">
+              <input type="email" class="form-control" placeholder="Email address" required>
+              <button type="submit" class="btn btn-primary" style="padding-inline: 1rem;"><i
+                  data-lucide="send"></i></button>
+            </div>
+            <!-- Mailchimp embed comment -->
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 LegalSeal Notary & Apostille Services. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

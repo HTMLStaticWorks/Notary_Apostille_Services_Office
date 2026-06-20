@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | LegalSeal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><i data-lucide="scale"></i> LegalSeal</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link" style="color: var(--color-primary);">Services</a>
+        <a href="apostille.html" class="nav-link">Apostille</a>
+        <a href="documents.html" class="nav-link">Documents</a>
+        <a href="fees.html" class="nav-link">Fees</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" aria-label="Toggle Theme"><i data-lucide="sun"
+            class="theme-icon"></i></button>
+        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"><i data-lucide="arrow-left-right"></i></button>
+        <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem;">Login</a>
+      </div>
+      <button class="icon-btn hamburger" aria-label="Open Menu"><i data-lucide="menu"></i></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <!-- omitted for brevity -->
+  </div>
+
+  <main>
+    <section class="section"
+      style="padding-top: 10rem; padding-bottom: 5rem; background-color: var(--color-surface-alt); text-align: center;">
+      <div class="container">
+        <span class="section-subtitle">Notarization types</span>
+        <h1 style="margin-bottom: 1.5rem;">Our Services</h1>
+        <p style="color: var(--color-text-muted); max-width: 700px; margin-inline: auto; font-size: 1.125rem;">
+          Legally binding certification for all critical documents, available in-office or at your location.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+
+          <!-- Acknowledgment -->
+          <div class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+            <div style="width: 100%; height: 200px; overflow: hidden;">
+              <img src="assets/images/svc-acknowledgment.jpg" alt="Acknowledgment notarization"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-base);"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="padding: 2rem; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <div
+                style="background-color: var(--color-surface-alt); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; color: var(--color-primary); margin-bottom: 1.5rem; display: inline-block; align-self: flex-start;">
+                Same day</div>
+              <i data-lucide="file-signature" class="card-icon"></i>
+              <h3 class="card-title">Acknowledgment</h3>
+              <p class="card-text">Verification that a signer personally appeared, was properly identified, and signed
+                the document willingly.</p>
+              <a href="contact.html?service=acknowledgment" class="btn btn-outline btn-full">Book this service</a>
+            </div>
+          </div>
+
+          <!-- Jurat -->
+          <div class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+            <div style="width: 100%; height: 200px; overflow: hidden;">
+              <img src="assets/images/svc-jurat.jpg" alt="Jurat notarization"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-base);"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="padding: 2rem; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <div
+                style="background-color: var(--color-surface-alt); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; color: var(--color-primary); margin-bottom: 1.5rem; display: inline-block; align-self: flex-start;">
+                Same day</div>
+              <i data-lucide="scroll-text" class="card-icon"></i>
+              <h3 class="card-title">Jurat</h3>
+              <p class="card-text">Requires the signer to swear or affirm to the truthfulness of the document's contents
+                in our presence.</p>
+              <a href="contact.html?service=jurat" class="btn btn-outline btn-full">Book this service</a>
+            </div>
+          </div>
+
+          <!-- Copy Certification -->
+          <div class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+            <div style="width: 100%; height: 200px; overflow: hidden;">
+              <img src="assets/images/svc-copy.jpg" alt="Copy certification"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-base);"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="padding: 2rem; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <div
+                style="background-color: var(--color-surface-alt); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; color: var(--color-text-muted); margin-bottom: 1.5rem; display: inline-block; align-self: flex-start;">
+                1-3 business days</div>
+              <i data-lucide="copy-check" class="card-icon"></i>
+              <h3 class="card-title">Copy Certification</h3>
+              <p class="card-text">Certification that a copy of an original document (such as a diploma or passport) is
+                true, exact, and complete.</p>
+              <a href="contact.html?service=copy" class="btn btn-outline btn-full">Book this service</a>
+            </div>
+          </div>
+
+          <!-- Oath / Affirmation -->
+          <div class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+            <div style="width: 100%; height: 200px; overflow: hidden;">
+              <img src="assets/images/type-oath.jpg" alt="Oath and affirmation"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-base);"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="padding: 2rem; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <div
+                style="background-color: var(--color-surface-alt); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; color: var(--color-primary); margin-bottom: 1.5rem; display: inline-block; align-self: flex-start;">
+                Same day</div>
+              <i data-lucide="hand" class="card-icon"></i>
+              <h3 class="card-title">Oath / Affirmation</h3>
+              <p class="card-text">Administration of a verbal oath or affirmation, legally binding the individual to
+                honesty.</p>
+              <a href="contact.html?service=oath" class="btn btn-outline btn-full">Book this service</a>
+            </div>
+          </div>
+
+          <!-- Signature Witnessing -->
+          <div class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+            <div style="width: 100%; height: 200px; overflow: hidden;">
+              <img src="assets/images/type-witness.jpg" alt="Signature witnessing"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-base);"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="padding: 2rem; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <div
+                style="background-color: var(--color-surface-alt); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; color: var(--color-primary); margin-bottom: 1.5rem; display: inline-block; align-self: flex-start;">
+                Same day</div>
+              <i data-lucide="eye" class="card-icon"></i>
+              <h3 class="card-title">Signature Witnessing</h3>
+              <p class="card-text">We verify identity and witness the signing of the document, ensuring no coercion or
+                fraud.</p>
+              <a href="contact.html?service=witness" class="btn btn-outline btn-full">Book this service</a>
+            </div>
+          </div>
+
+          <!-- Mobile Notary -->
+          <div class="card"
+            style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left; border-color: var(--color-accent);">
+            <div style="width: 100%; height: 200px; overflow: hidden;">
+              <img src="assets/images/type-mobile.jpg" alt="Mobile notary service"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-base);"
+                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="padding: 2rem; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <div
+                style="background-color: var(--color-accent); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; color: #000; margin-bottom: 1.5rem; display: inline-block; align-self: flex-start;">
+                24/7 Available</div>
+              <i data-lucide="car" class="card-icon" style="color: var(--color-accent);"></i>
+              <h3 class="card-title">Mobile Notary</h3>
+              <p class="card-text">We travel to your home, office, hospital, or any convenient location to perform any
+                of the above services.</p>
+              <a href="contact.html?service=mobile" class="btn btn-primary btn-full">Book Mobile Service</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment Booking Form -->
+    <section class="section" style="background-color: var(--color-surface-alt); border-top: 1px solid var(--color-border);">
+      <div class="container" style="max-width: 800px;">
+        <div class="text-center" style="margin-bottom: 3rem;">
+          <span class="section-subtitle">Book Appointment</span>
+          <h2>Schedule Your Session</h2>
+          <p style="color: var(--color-text-muted); margin-top: 0.5rem;">Fast, secure, and legally binding notary services tailored to your schedule.</p>
+        </div>
+
+        <form class="needs-validation booking-form" novalidate style="background-color: var(--color-secondary); border-radius: var(--radius-global); border: 1px solid var(--color-border); box-shadow: var(--shadow-global); text-align: left;">
+          <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="booking-name" class="form-label">Full Name</label>
+              <input type="text" id="booking-name" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="booking-email" class="form-label">Email Address</label>
+              <input type="email" id="booking-email" class="form-control" placeholder="john@example.com" required>
+            </div>
+          </div>
+
+          <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="booking-service" class="form-label">Select Service</label>
+              <select id="booking-service" class="form-control" required style="appearance: none; background: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23666%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpolyline points=%226 9 12 15 18 9%22%3E%3C/polyline%3E%3C/svg%3E') no-repeat right 1rem center / 1.2rem; padding-right: 2.5rem;">
+                <option value="" disabled selected>Choose a service...</option>
+                <option value="acknowledgment">Acknowledgment</option>
+                <option value="jurat">Jurat</option>
+                <option value="copy-certification">Copy Certification</option>
+                <option value="oath-affirmation">Oath / Affirmation</option>
+                <option value="signature-witnessing">Signature Witnessing</option>
+                <option value="mobile-notary">Mobile Notary Service</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="booking-date" class="form-label">Preferred Date & Time</label>
+              <input type="datetime-local" id="booking-date" class="form-control" required style="height: 46px;">
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 2rem;">
+            <label for="booking-message" class="form-label">Special Instructions (Optional)</label>
+            <textarea id="booking-message" class="form-control" placeholder="Tell us about your documents or travel locations if requesting mobile notary..."></textarea>
+          </div>
+
+          <div class="checkbox-wrap" style="margin-bottom: 2rem;">
+            <input type="checkbox" id="booking-terms" name="terms" required style="cursor: pointer;">
+            <label for="booking-terms" style="font-size: 0.875rem; color: var(--color-text-muted); cursor: pointer; user-select: none;">
+              I confirm that signers will present a valid government-issued ID at the appointment.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" style="padding-block: 1rem;">Confirm Booking Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 LegalSeal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
