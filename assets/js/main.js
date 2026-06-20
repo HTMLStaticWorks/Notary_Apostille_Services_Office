@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFormValidation();
   initTypewriterFallback();
   initCounterAnimation();
+  initActiveNavHighlight();
 });
 
 /* --- THEME TOGGLE --- */
@@ -308,5 +309,27 @@ function initCounterAnimation() {
     
     requestAnimationFrame(updateCounter);
   }
+}
+
+/* --- ACTIVE NAV HIGHLIGHTING --- */
+function initActiveNavHighlight() {
+  let currentPath = window.location.pathname.split('/').pop();
+  if (!currentPath || currentPath === '/') {
+    currentPath = 'index.html';
+  }
+  
+  if (currentPath === 'blog-single.html') {
+    currentPath = 'blog.html';
+  }
+  
+  const navLinks = document.querySelectorAll('.nav-links .nav-link, .drawer-nav .nav-link');
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPath) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
 }
 

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fees & Pricing | LegalSeal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
@@ -20,11 +23,14 @@
       overflow: hidden;
       box-shadow: var(--shadow-global);
     }
-    .pricing-table th, .pricing-table td {
+
+    .pricing-table th,
+    .pricing-table td {
       padding: 1.5rem;
       text-align: left;
       border-bottom: 1px solid var(--color-border);
     }
+
     .pricing-table th {
       background-color: var(--color-surface-alt);
       font-weight: bold;
@@ -32,13 +38,16 @@
       font-family: var(--font-heading);
       font-size: 1.125rem;
     }
-    html[dir="rtl"] .pricing-table th, 
+
+    html[dir="rtl"] .pricing-table th,
     html[dir="rtl"] .pricing-table td {
       text-align: right;
     }
+
     .table-responsive-wrapper {
       width: 100%;
     }
+
     @media (max-width: 768px) {
       .table-responsive-wrapper {
         overflow-x: auto;
@@ -47,50 +56,108 @@
         scrollbar-width: thin;
         scrollbar-color: var(--color-accent) var(--color-surface-alt);
       }
+
       .table-responsive-wrapper::-webkit-scrollbar {
         height: 8px;
         display: block;
       }
+
       .table-responsive-wrapper::-webkit-scrollbar-track {
         background: var(--color-surface-alt);
         border-radius: 4px;
       }
+
       .table-responsive-wrapper::-webkit-scrollbar-thumb {
         background: var(--color-accent);
         border-radius: 4px;
       }
+
       .pricing-table {
         min-width: 650px;
       }
     }
   </style>
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="logo"><i data-lucide="scale"></i> LegalSeal</a>
+      <a href="index.html" class="logo">
+        <i data-lucide="scale"></i> LegalSeal
+      </a>
+
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="home2.html" class="nav-link">Home 2</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="apostille.html" class="nav-link">Apostille</a>
         <a href="documents.html" class="nav-link">Documents</a>
-        <a href="fees.html" class="nav-link" style="color: var(--color-primary);">Fees</a>
+        <a href="fees.html" class="nav-link">Fees</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="blog.html" class="nav-link">Blog</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </div>
+
       <div class="nav-actions">
-        <button class="icon-btn theme-toggle"><i data-lucide="sun" class="theme-icon"></i></button>
-        <button class="icon-btn rtl-toggle"><i data-lucide="arrow-left-right"></i></button>
+        <button class="icon-btn theme-toggle" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="theme-icon"></i>
+        </button>
+        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+          <i data-lucide="arrow-left-right"></i>
+        </button>
         <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem;">Login</a>
       </div>
+
+      <button class="icon-btn hamburger" aria-label="Open Menu">
+        <i data-lucide="menu"></i>
+      </button>
     </div>
   </nav>
 
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo">
+        <i data-lucide="scale"></i> LegalSeal
+      </a>
+      <button class="icon-btn drawer-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <div class="drawer-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="apostille.html" class="nav-link">Apostille</a>
+      <a href="documents.html" class="nav-link">Documents</a>
+      <a href="fees.html" class="nav-link">Fees</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <div class="drawer-actions">
+      <div class="flex items-center gap-4 justify-between" style="margin-bottom: 1rem;">
+        <span style="font-weight: 500;">Appearance</span>
+        <div class="flex gap-2">
+          <button class="icon-btn theme-toggle" aria-label="Toggle Theme">
+            <i data-lucide="sun" class="theme-icon"></i>
+          </button>
+          <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+        </div>
+      </div>
+      <a href="login.html" class="btn btn-primary btn-full">Login</a>
+    </div>
+  </div>
+
   <main>
-    <section class="section" style="padding-top: 10rem; padding-bottom: 5rem; background-color: var(--color-surface-alt); text-align: center;">
+    <section class="section"
+      style="padding-top: 10rem; padding-bottom: 5rem; background-color: var(--color-surface-alt); text-align: center;">
       <div class="container">
         <span class="section-subtitle">Transparent Pricing</span>
         <h1 style="margin-bottom: 1.5rem;">Service Fees</h1>
@@ -115,13 +182,15 @@
             <tbody>
               <tr>
                 <td style="font-weight: 500;">Notarization</td>
-                <td style="color: var(--color-text-muted); font-size: 0.9375rem;">Per signature (Acknowledgment/Jurat)</td>
+                <td style="color: var(--color-text-muted); font-size: 0.9375rem;">Per signature (Acknowledgment/Jurat)
+                </td>
                 <td>$15.00</td>
                 <td>N/A</td>
               </tr>
               <tr>
                 <td style="font-weight: 500;">Apostille Service</td>
-                <td style="color: var(--color-text-muted); font-size: 0.9375rem;">Processing at Secretary of State (per doc)</td>
+                <td style="color: var(--color-text-muted); font-size: 0.9375rem;">Processing at Secretary of State (per
+                  doc)</td>
                 <td>$150.00</td>
                 <td>$250.00</td>
               </tr>
@@ -139,17 +208,21 @@
               </tr>
               <tr>
                 <td style="font-weight: 500;">Oath / Affirmation</td>
-                <td style="color: var(--color-text-muted); font-size: 0.9375rem;">Administering verbal oath per individual</td>
+                <td style="color: var(--color-text-muted); font-size: 0.9375rem;">Administering verbal oath per
+                  individual</td>
                 <td>$15.00</td>
                 <td>N/A</td>
               </tr>
             </tbody>
           </table>
         </div>
-        
-        <div style="margin-top: 2rem; padding: 1.5rem; background-color: rgba(201, 168, 76, 0.1); border-left: 4px solid var(--color-accent); border-radius: 4px;">
+
+        <div
+          style="margin-top: 2rem; padding: 1.5rem; background-color: rgba(201, 168, 76, 0.1); border-left: 4px solid var(--color-accent); border-radius: 4px;">
           <p style="font-size: 0.875rem; color: var(--color-text-muted);">
-            <strong>Disclaimer:</strong> Fees are subject to change without notice. Government levies, Secretary of State fees, and courier/shipping fees are additional. Rush service is strictly subject to availability and government processing times.
+            <strong>Disclaimer:</strong> Fees are subject to change without notice. Government levies, Secretary of
+            State fees, and courier/shipping fees are additional. Rush service is strictly subject to availability and
+            government processing times.
           </p>
         </div>
 
@@ -161,10 +234,74 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container"><div class="footer-bottom"><p>&copy; 2026 LegalSeal. All rights reserved.</p></div></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+            <i data-lucide="scale"></i> LegalSeal
+          </a>
+          <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; max-width: 300px;">
+            Your trusted partner for certified notarization and apostille services. Precision, legality, and peace of
+            mind.
+          </p>
+          <div class="flex gap-4">
+            <span class="badge-item"><i data-lucide="shield-check"
+                style="width: 1rem; height: 1rem; color: var(--color-accent);"></i> Licensed & Bonded</span>
+            <span class="badge-item"><i data-lucide="award"
+                style="width: 1rem; height: 1rem; color: var(--color-accent);"></i> NNA Certified</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="apostille.html">Apostille</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact Us</h4>
+          <ul class="footer-links">
+            <li><i data-lucide="phone"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              +1 (800) 555-0199</li>
+            <li><i data-lucide="mail"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              support@legalseal.com</li>
+            <li><i data-lucide="map-pin"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              100 Legal Avenue, Metropolis, NY</li>
+            <li><i data-lucide="clock"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              Mon–Sat: 9am – 7pm</li>
+          </ul>
+
+          <form style="margin-top: 1.5rem;" class="needs-validation">
+            <h5 style="margin-bottom: 0.75rem; font-size: 1rem;">Newsletter</h5>
+            <div class="flex gap-2">
+              <input type="email" class="form-control" placeholder="Email address" required>
+              <button type="submit" class="btn btn-primary" style="padding-inline: 1rem;"><i
+                  data-lucide="send"></i></button>
+            </div>
+            <!-- Mailchimp embed comment -->
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 LegalSeal Notary & Apostille Services. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
   <script>lucide.createIcons();</script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

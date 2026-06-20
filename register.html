@@ -11,8 +11,18 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
-<body style="height: 100vh; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: var(--color-surface-alt);">
+<body class="auth-page">
   
+  <!-- Top Right Controls -->
+  <div class="auth-controls">
+    <button class="icon-btn theme-toggle" aria-label="Toggle Theme">
+      <i data-lucide="sun" class="theme-icon"></i>
+    </button>
+    <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+      <i data-lucide="arrow-left-right"></i>
+    </button>
+  </div>
+
   <div style="width: 100%; max-width: 450px; padding: 2rem;">
 
     <div style="background-color: var(--color-secondary); padding: 2.5rem; border-radius: var(--radius-global); box-shadow: var(--shadow-global); border: 1px solid var(--color-border); max-height: 70vh; overflow-y: auto;">

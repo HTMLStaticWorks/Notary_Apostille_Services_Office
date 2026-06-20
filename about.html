@@ -20,6 +20,7 @@
 <body>
 
   <!-- Navbar -->
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="logo">
@@ -33,7 +34,7 @@
         <a href="apostille.html" class="nav-link">Apostille</a>
         <a href="documents.html" class="nav-link">Documents</a>
         <a href="fees.html" class="nav-link">Fees</a>
-        <a href="about.html" class="nav-link" style="color: var(--color-primary);">About</a>
+        <a href="about.html" class="nav-link">About</a>
         <a href="blog.html" class="nav-link">Blog</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </div>
@@ -53,6 +54,46 @@
       </button>
     </div>
   </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo">
+        <i data-lucide="scale"></i> LegalSeal
+      </a>
+      <button class="icon-btn drawer-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <div class="drawer-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="apostille.html" class="nav-link">Apostille</a>
+      <a href="documents.html" class="nav-link">Documents</a>
+      <a href="fees.html" class="nav-link">Fees</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <div class="drawer-actions">
+      <div class="flex items-center gap-4 justify-between" style="margin-bottom: 1rem;">
+        <span style="font-weight: 500;">Appearance</span>
+        <div class="flex gap-2">
+          <button class="icon-btn theme-toggle" aria-label="Toggle Theme">
+            <i data-lucide="sun" class="theme-icon"></i>
+          </button>
+          <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+        </div>
+      </div>
+      <a href="login.html" class="btn btn-primary btn-full">Login</a>
+    </div>
+  </div>
 
   <!-- Drawer omitted for brevity here, assumed included in build -->
 
@@ -89,7 +130,8 @@
                 style="border: 1px solid var(--color-border); border-radius: var(--radius-global); background-color: var(--color-secondary);">
                 <div
                   style="background-color: var(--color-surface-alt); padding: 1rem; border-radius: 50%; width: fit-content;">
-                  <i data-lucide="shield-check" style="color: var(--color-primary); display: block;"></i></div>
+                  <i data-lucide="shield-check" style="color: var(--color-primary); display: block;"></i>
+                </div>
                 <div>
                   <h4 style="margin-bottom: 0.25rem;">Licensed & Bonded</h4>
                   <span style="font-size: 0.875rem; color: var(--color-text-muted);">Fully insured and
@@ -100,7 +142,8 @@
                 style="border: 1px solid var(--color-border); border-radius: var(--radius-global); background-color: var(--color-secondary);">
                 <div
                   style="background-color: var(--color-surface-alt); padding: 1rem; border-radius: 50%; width: fit-content;">
-                  <i data-lucide="award" style="color: var(--color-primary); display: block;"></i></div>
+                  <i data-lucide="award" style="color: var(--color-primary); display: block;"></i>
+                </div>
                 <div>
                   <h4 style="margin-bottom: 0.25rem;">NNA Certified</h4>
                   <span style="font-size: 0.875rem; color: var(--color-text-muted);">National Notary Association
@@ -127,46 +170,38 @@
           <h2>Milestones of Excellence</h2>
         </div>
 
-        <div style="max-width: 800px; margin-inline: auto; position: relative;">
+        <div class="timeline-container">
           <!-- Simple CSS timeline -->
-          <div
-            style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background-color: var(--color-border); transform: translateX(-50%);">
-          </div>
+          <div class="timeline-line"></div>
 
-          <div class="flex justify-between items-center" style="margin-bottom: 3rem; position: relative;">
-            <div style="width: 45%; text-align: right; padding-right: 2rem;">
+          <div class="timeline-row">
+            <div class="timeline-content-left">
               <h3 style="color: var(--color-primary);">1998</h3>
               <p style="color: var(--color-text-muted);">LegalSeal founded with a mission to streamline local
                 notarization.</p>
             </div>
-            <div
-              style="width: 1rem; height: 1rem; background-color: var(--color-primary); border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%); border: 4px solid var(--color-secondary);">
-            </div>
-            <div style="width: 45%;"></div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-empty"></div>
           </div>
 
-          <div class="flex justify-between items-center" style="margin-bottom: 3rem; position: relative;">
-            <div style="width: 45%;"></div>
-            <div
-              style="width: 1rem; height: 1rem; background-color: var(--color-primary); border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%); border: 4px solid var(--color-secondary);">
-            </div>
-            <div style="width: 45%; padding-left: 2rem;">
+          <div class="timeline-row">
+            <div class="timeline-empty"></div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content-right">
               <h3 style="color: var(--color-primary);">2005</h3>
               <p style="color: var(--color-text-muted);">Certified 10,000th document and launched international
                 apostille desk.</p>
             </div>
           </div>
 
-          <div class="flex justify-between items-center" style="position: relative;">
-            <div style="width: 45%; text-align: right; padding-right: 2rem;">
+          <div class="timeline-row">
+            <div class="timeline-content-left">
               <h3 style="color: var(--color-primary);">2015</h3>
               <p style="color: var(--color-text-muted);">Introduced 24/7 Mobile Notary division serving the metropolitan
                 area.</p>
             </div>
-            <div
-              style="width: 1rem; height: 1rem; background-color: var(--color-primary); border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%); border: 4px solid var(--color-secondary);">
-            </div>
-            <div style="width: 45%;"></div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-empty"></div>
           </div>
         </div>
       </div>
@@ -236,9 +271,67 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <!-- Same footer structure -->
     <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+            <i data-lucide="scale"></i> LegalSeal
+          </a>
+          <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; max-width: 300px;">
+            Your trusted partner for certified notarization and apostille services. Precision, legality, and peace of
+            mind.
+          </p>
+          <div class="flex gap-4">
+            <span class="badge-item"><i data-lucide="shield-check"
+                style="width: 1rem; height: 1rem; color: var(--color-accent);"></i> Licensed & Bonded</span>
+            <span class="badge-item"><i data-lucide="award"
+                style="width: 1rem; height: 1rem; color: var(--color-accent);"></i> NNA Certified</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="apostille.html">Apostille</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact Us</h4>
+          <ul class="footer-links">
+            <li><i data-lucide="phone"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              +1 (800) 555-0199</li>
+            <li><i data-lucide="mail"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              support@legalseal.com</li>
+            <li><i data-lucide="map-pin"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              100 Legal Avenue, Metropolis, NY</li>
+            <li><i data-lucide="clock"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              Mon–Sat: 9am – 7pm</li>
+          </ul>
+
+          <form style="margin-top: 1.5rem;" class="needs-validation">
+            <h5 style="margin-bottom: 0.75rem; font-size: 1rem;">Newsletter</h5>
+            <div class="flex gap-2">
+              <input type="email" class="form-control" placeholder="Email address" required>
+              <button type="submit" class="btn btn-primary" style="padding-inline: 1rem;"><i
+                  data-lucide="send"></i></button>
+            </div>
+            <!-- Mailchimp embed comment -->
+          </form>
+        </div>
+      </div>
+
       <div class="footer-bottom">
         <p>&copy; 2026 LegalSeal Notary & Apostille Services. All rights reserved.</p>
       </div>

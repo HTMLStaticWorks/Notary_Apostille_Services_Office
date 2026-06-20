@@ -19,25 +19,77 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="logo"><i data-lucide="scale"></i> LegalSeal</a>
+      <a href="index.html" class="logo">
+        <i data-lucide="scale"></i> LegalSeal
+      </a>
+
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="home2.html" class="nav-link">Home 2</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="apostille.html" class="nav-link">Apostille</a>
-        <a href="documents.html" class="nav-link" style="color: var(--color-primary);">Documents</a>
+        <a href="documents.html" class="nav-link">Documents</a>
         <a href="fees.html" class="nav-link">Fees</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="blog.html" class="nav-link">Blog</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </div>
+
       <div class="nav-actions">
-        <button class="icon-btn theme-toggle"><i data-lucide="sun" class="theme-icon"></i></button>
-        <button class="icon-btn rtl-toggle"><i data-lucide="arrow-left-right"></i></button>
+        <button class="icon-btn theme-toggle" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="theme-icon"></i>
+        </button>
+        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+          <i data-lucide="arrow-left-right"></i>
+        </button>
         <a href="login.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem;">Login</a>
       </div>
+
+      <button class="icon-btn hamburger" aria-label="Open Menu">
+        <i data-lucide="menu"></i>
+      </button>
     </div>
   </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo">
+        <i data-lucide="scale"></i> LegalSeal
+      </a>
+      <button class="icon-btn drawer-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <div class="drawer-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="apostille.html" class="nav-link">Apostille</a>
+      <a href="documents.html" class="nav-link">Documents</a>
+      <a href="fees.html" class="nav-link">Fees</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <div class="drawer-actions">
+      <div class="flex items-center gap-4 justify-between" style="margin-bottom: 1rem;">
+        <span style="font-weight: 500;">Appearance</span>
+        <div class="flex gap-2">
+          <button class="icon-btn theme-toggle" aria-label="Toggle Theme">
+            <i data-lucide="sun" class="theme-icon"></i>
+          </button>
+          <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+        </div>
+      </div>
+      <a href="login.html" class="btn btn-primary btn-full">Login</a>
+    </div>
+  </div>
 
   <main>
     <section class="section"
@@ -68,7 +120,7 @@
         </div>
 
         <!-- Document Grid -->
-        <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+        <div class="doc-grid">
 
           <!-- Birth Certificates -->
           <div class="card doc-card" data-category="personal"
@@ -82,7 +134,8 @@
               <div
                 style="background-color: var(--color-surface-alt); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; color: var(--color-primary); margin-bottom: 1rem; text-transform: uppercase; font-weight: bold; display: inline-block;">
                 Personal</div>
-              <i data-lucide="user" class="card-icon" style="margin: 0 auto 1rem; width: 2rem; height: 2rem; display: block;"></i>
+              <i data-lucide="user" class="card-icon"
+                style="margin: 0 auto 1rem; width: 2rem; height: 2rem; display: block;"></i>
               <h3 class="card-title" style="font-size: 1.125rem;">Birth Certificates</h3>
               <p class="card-text" style="font-size: 0.875rem;">State-issued originals required for apostille.</p>
             </div>
@@ -100,7 +153,8 @@
               <div
                 style="background-color: var(--color-surface-alt); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; color: var(--color-primary); margin-bottom: 1rem; text-transform: uppercase; font-weight: bold; display: inline-block;">
                 Personal</div>
-              <i data-lucide="passport" class="card-icon" style="margin: 0 auto 1rem; width: 2rem; height: 2rem; display: block;"></i>
+              <i data-lucide="user" class="card-icon"
+                style="margin: 0 auto 1rem; width: 2rem; height: 2rem; display: block;"></i>
               <h3 class="card-title" style="font-size: 1.125rem;">Passports & IDs</h3>
               <p class="card-text" style="font-size: 0.875rem;">Copy certification of identification documents.</p>
             </div>
@@ -116,10 +170,10 @@
             </div>
             <div style="padding: 1.5rem; width: 100%;">
               <div
-                style="background-color: var(--color-surface-alt); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; color: #b45309; margin-bottom: 1rem; text-transform: uppercase; font-weight: bold; display: inline-block;">
+                style="background-color: var(--color-surface-alt); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; color: var(--color-primary); margin-bottom: 1rem; text-transform: uppercase; font-weight: bold; display: inline-block;">
                 Legal</div>
               <i data-lucide="scale" class="card-icon"
-                style="margin: 0 auto 1rem; width: 2rem; height: 2rem; color: #b45309; display: block;"></i>
+                style="margin: 0 auto 1rem; width: 2rem; height: 2rem; display: block;"></i>
               <h3 class="card-title" style="font-size: 1.125rem;">Power of Attorney</h3>
               <p class="card-text" style="font-size: 0.875rem;">Notarization and witnesses available for execution.</p>
             </div>
@@ -135,10 +189,10 @@
             </div>
             <div style="padding: 1.5rem; width: 100%;">
               <div
-                style="background-color: var(--color-surface-alt); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; color: #b45309; margin-bottom: 1rem; text-transform: uppercase; font-weight: bold; display: inline-block;">
+                style="background-color: var(--color-surface-alt); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; color: var(--color-primary); margin-bottom: 1rem; text-transform: uppercase; font-weight: bold; display: inline-block;">
                 Legal</div>
               <i data-lucide="file-text" class="card-icon"
-                style="margin: 0 auto 1rem; width: 2rem; height: 2rem; color: #b45309; display: block;"></i>
+                style="margin: 0 auto 1rem; width: 2rem; height: 2rem; display: block;"></i>
               <h3 class="card-title" style="font-size: 1.125rem;">Affidavits</h3>
               <p class="card-text" style="font-size: 0.875rem;">Sworn statements administered via Jurat.</p>
             </div>
@@ -154,10 +208,10 @@
             </div>
             <div style="padding: 1.5rem; width: 100%;">
               <div
-                style="background-color: var(--color-surface-alt); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; color: #1d4ed8; margin-bottom: 1rem; text-transform: uppercase; font-weight: bold; display: inline-block;">
+                style="background-color: var(--color-surface-alt); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; color: var(--color-primary); margin-bottom: 1rem; text-transform: uppercase; font-weight: bold; display: inline-block;">
                 Educational</div>
               <i data-lucide="graduation-cap" class="card-icon"
-                style="margin: 0 auto 1rem; width: 2rem; height: 2rem; color: #1d4ed8; display: block;"></i>
+                style="margin: 0 auto 1rem; width: 2rem; height: 2rem; display: block;"></i>
               <h3 class="card-title" style="font-size: 1.125rem;">Degrees & Diplomas</h3>
               <p class="card-text" style="font-size: 0.875rem;">Authentication of university credentials.</p>
             </div>
@@ -176,7 +230,7 @@
                 style="background-color: var(--color-surface-alt); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; color: #047857; margin-bottom: 1rem; text-transform: uppercase; font-weight: bold; display: inline-block;">
                 Commercial</div>
               <i data-lucide="building" class="card-icon"
-                style="margin: 0 auto 1rem; width: 2rem; height: 2rem; color: #047857; display: block;"></i>
+                style="margin: 0 auto 1rem; width: 2rem; height: 2rem; display: block;"></i>
               <h3 class="card-title" style="font-size: 1.125rem;">Articles of Incorporation</h3>
               <p class="card-text" style="font-size: 0.875rem;">State-certified business establishment documents.</p>
             </div>
@@ -192,10 +246,12 @@
         <div class="text-center" style="margin-bottom: 3rem;">
           <span class="section-subtitle">Have Questions?</span>
           <h2>Document Enquiry</h2>
-          <p style="color: var(--color-text-muted); margin-top: 0.5rem;">Have a document that is not listed above, or unsure about the requirements? Send us an enquiry and our experts will get back to you shortly.</p>
+          <p style="color: var(--color-text-muted); margin-top: 0.5rem;">Have a document that is not listed above, or
+            unsure about the requirements? Send us an enquiry and our experts will get back to you shortly.</p>
         </div>
 
-        <div style="background-color: var(--color-secondary); border: 1px solid var(--color-border); padding: 2.5rem; border-radius: var(--radius-global); box-shadow: var(--shadow-global);">
+        <div
+          style="background-color: var(--color-secondary); border: 1px solid var(--color-border); padding: 2.5rem; border-radius: var(--radius-global); box-shadow: var(--shadow-global);">
           <form action="#" method="POST" class="needs-validation" novalidate>
             <div class="form-group">
               <label class="form-label">Full Name *</label>
@@ -214,7 +270,8 @@
 
             <div class="form-group">
               <label class="form-label">Document Description & Questions *</label>
-              <textarea name="message" class="form-control" required placeholder="Please describe the document you need authenticated..."></textarea>
+              <textarea name="message" class="form-control" required
+                placeholder="Please describe the document you need authenticated..."></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary btn-full" style="margin-top: 1rem;">Send Enquiry</button>
@@ -224,42 +281,55 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="section" style="background-color: var(--color-surface-alt); border-top: 1px solid var(--color-border);">
+    <section class="section"
+      style="background-color: var(--color-surface-alt); border-top: 1px solid var(--color-border);">
       <div class="container" style="max-width: 800px;">
         <div class="text-center" style="margin-bottom: 4rem;">
           <span class="section-subtitle">Common Queries</span>
           <h2>Frequently Asked Questions</h2>
-          <p style="color: var(--color-text-muted); margin-top: 0.5rem;">Quick answers to your questions about document legalization and notary procedures.</p>
+          <p style="color: var(--color-text-muted); margin-top: 0.5rem;">Quick answers to your questions about document
+            legalization and notary procedures.</p>
         </div>
 
         <div class="faq-accordion">
-          <details class="faq-item" style="background-color: var(--color-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-global); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer; transition: var(--transition-base);">
-            <summary style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--color-text); outline: none;">
+          <details class="faq-item"
+            style="background-color: var(--color-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-global); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer; transition: var(--transition-base);">
+            <summary
+              style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--color-text); outline: none;">
               What is the difference between Notarization and Apostille?
               <span class="faq-icon" style="transition: transform 0.3s; font-size: 1.5rem;">+</span>
             </summary>
             <p style="margin-top: 1rem; color: var(--color-text-muted); line-height: 1.6; font-size: 0.9375rem;">
-              Notarization verifies the identity of the signer and the authenticity of their signature for domestic use. An Apostille is an international certification attached to the document by the Secretary of State, certifying it for use in countries that are members of the Hague Convention.
+              Notarization verifies the identity of the signer and the authenticity of their signature for domestic use.
+              An Apostille is an international certification attached to the document by the Secretary of State,
+              certifying it for use in countries that are members of the Hague Convention.
             </p>
           </details>
 
-          <details class="faq-item" style="background-color: var(--color-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-global); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer; transition: var(--transition-base);">
-            <summary style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--color-text); outline: none;">
+          <details class="faq-item"
+            style="background-color: var(--color-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-global); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer; transition: var(--transition-base);">
+            <summary
+              style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--color-text); outline: none;">
               What documents can be authenticated for international use?
               <span class="faq-icon" style="transition: transform 0.3s; font-size: 1.5rem;">+</span>
             </summary>
             <p style="margin-top: 1rem; color: var(--color-text-muted); line-height: 1.6; font-size: 0.9375rem;">
-              Most public and private documents can be certified, including birth, marriage, and death certificates, degrees, diplomas, powers of attorney, corporate agreements, background checks, and passports.
+              Most public and private documents can be certified, including birth, marriage, and death certificates,
+              degrees, diplomas, powers of attorney, corporate agreements, background checks, and passports.
             </p>
           </details>
 
-          <details class="faq-item" style="background-color: var(--color-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-global); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer; transition: var(--transition-base);">
-            <summary style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--color-text); outline: none;">
+          <details class="faq-item"
+            style="background-color: var(--color-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-global); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer; transition: var(--transition-base);">
+            <summary
+              style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--color-text); outline: none;">
               Do I need to present original documents?
               <span class="faq-icon" style="transition: transform 0.3s; font-size: 1.5rem;">+</span>
             </summary>
             <p style="margin-top: 1rem; color: var(--color-text-muted); line-height: 1.6; font-size: 0.9375rem;">
-              Yes, for most apostille and legalization requests, the Secretary of State requires the original certified document issued by the local, state, or federal authority. For notarized copies, we must inspect the original document in person to certify the copy.
+              Yes, for most apostille and legalization requests, the Secretary of State requires the original certified
+              document issued by the local, state, or federal authority. For notarized copies, we must inspect the
+              original document in person to certify the copy.
             </p>
           </details>
         </div>
@@ -267,10 +337,69 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+            <i data-lucide="scale"></i> LegalSeal
+          </a>
+          <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; max-width: 300px;">
+            Your trusted partner for certified notarization and apostille services. Precision, legality, and peace of
+            mind.
+          </p>
+          <div class="flex gap-4">
+            <span class="badge-item"><i data-lucide="shield-check"
+                style="width: 1rem; height: 1rem; color: var(--color-accent);"></i> Licensed & Bonded</span>
+            <span class="badge-item"><i data-lucide="award"
+                style="width: 1rem; height: 1rem; color: var(--color-accent);"></i> NNA Certified</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="apostille.html">Apostille</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact Us</h4>
+          <ul class="footer-links">
+            <li><i data-lucide="phone"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              +1 (800) 555-0199</li>
+            <li><i data-lucide="mail"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              support@legalseal.com</li>
+            <li><i data-lucide="map-pin"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              100 Legal Avenue, Metropolis, NY</li>
+            <li><i data-lucide="clock"
+                style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem; color: var(--color-primary);"></i>
+              Mon–Sat: 9am – 7pm</li>
+          </ul>
+
+          <form style="margin-top: 1.5rem;" class="needs-validation">
+            <h5 style="margin-bottom: 0.75rem; font-size: 1rem;">Newsletter</h5>
+            <div class="flex gap-2">
+              <input type="email" class="form-control" placeholder="Email address" required>
+              <button type="submit" class="btn btn-primary" style="padding-inline: 1rem;"><i
+                  data-lucide="send"></i></button>
+            </div>
+            <!-- Mailchimp embed comment -->
+          </form>
+        </div>
+      </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2026 LegalSeal. All rights reserved.</p>
+        <p>&copy; 2026 LegalSeal Notary & Apostille Services. All rights reserved.</p>
       </div>
     </div>
   </footer>
