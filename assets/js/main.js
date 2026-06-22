@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTypewriterFallback();
   initCounterAnimation();
   initActiveNavHighlight();
+  initBackToTop();
 });
 
 /* --- THEME TOGGLE --- */
@@ -330,6 +331,41 @@ function initActiveNavHighlight() {
     } else {
       link.classList.remove('active');
     }
+  });
+}
+
+/* --- PASSWORD VISIBILITY TOGGLE --- */
+window.togglePassword = function(button) {
+  const container = button.parentElement;
+  const input = container.querySelector('input');
+  
+  if (input.type === 'password') {
+    input.type = 'text';
+    button.classList.add('password-visible');
+  } else {
+    input.type = 'password';
+    button.classList.remove('password-visible');
+  }
+}
+
+/* --- BACK TO TOP --- */
+function initBackToTop() {
+  const btn = document.createElement('button');
+  btn.className = 'back-to-top';
+  btn.setAttribute('aria-label', 'Back to top');
+  btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>';
+  document.body.appendChild(btn);
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
 
