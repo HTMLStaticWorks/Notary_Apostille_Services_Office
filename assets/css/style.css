@@ -466,8 +466,8 @@ html[data-theme="dark"] {
 }
 
 .form-control option {
-  color: revert;
-  background-color: revert;
+  color: #1a1a1a !important;
+  background-color: #ffffff !important;
 }
 
 .form-control:focus {
