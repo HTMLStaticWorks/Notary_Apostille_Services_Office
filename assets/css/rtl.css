@@ -19,3 +19,9 @@ html[dir="rtl"] .typewriter-text {
   border-right: none;
   border-left: 0.15em solid var(--color-primary);
 }
+
+html[dir="rtl"] select.form-control {
+  background-position: left 1rem center;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+}
