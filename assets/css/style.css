@@ -6,6 +6,7 @@
   --color-primary: #0f766e;
   --color-secondary: #ffffff; /* Surface color */
   --color-accent: #c9a84c;
+  --color-heading: var(--color-primary);
   
   /* Text Colors */
   --color-text: #1a1a1a;
@@ -36,6 +37,8 @@
 }
 
 [data-theme="dark"] {
+  --color-primary: #14b8a6; /* Brighter teal for dark mode logo and brand consistency */
+  --color-heading: var(--color-primary);
   --color-secondary: #0a0a0a;
   --color-text: #f3f4f6;
   --color-text-muted: #9ca3af;
@@ -92,22 +95,34 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   line-height: 1.15;
-  color: var(--color-text);
+  color: var(--color-heading);
 }
 
 h1 {
-  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
   font-weight: var(--weight-h1);
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
   font-weight: var(--weight-h2);
 }
 
 h3 {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
   font-weight: var(--weight-h3);
+}
+
+h4 {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+h6 {
+  font-size: 0.875rem;
 }
 
 .text-center {
@@ -552,8 +567,8 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 2rem; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.625rem; }
   .section { padding-block: 4rem; }
   .footer-grid {
     grid-template-columns: 1fr;
@@ -585,7 +600,7 @@ textarea.form-control {
 }
 
 @media (max-width: 360px) {
-  h1 { font-size: 2rem; }
+  h1 { font-size: 1.75rem; }
   .card { padding: 1.5rem 1rem; }
   /* all content centered automatically via utility classes if added, no overflow handled by box-sizing */
   .hero-btn-group {
@@ -1148,13 +1163,13 @@ details.faq-item:hover {
 
 /* --- AUTH PAGES STYLING --- */
 .auth-page {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-surface-alt);
   position: relative;
+  padding-block: 3rem;
 }
 
 .auth-controls {
@@ -1179,5 +1194,19 @@ details.faq-item:hover {
     top: 1.5rem;
     inset-inline-end: 1.5rem;
   }
+}
+
+/* --- CTA BANNER BOX --- */
+.cta-banner-box {
+  border: 2px solid var(--color-primary);
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.08) 0%, rgba(201, 168, 76, 0.08) 100%);
+  padding: 4rem 2rem;
+  border-radius: var(--radius-global);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+[data-theme="dark"] .cta-banner-box {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.08) 0%, rgba(201, 168, 76, 0.08) 100%);
 }
 
